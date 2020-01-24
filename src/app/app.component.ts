@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import { HeaderComponent } from './header/header.component';
+import { TodosListComponent } from './component/todos-list/todos-list.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
