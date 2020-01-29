@@ -1,0 +1,8 @@
+
+<label>
+    <input [checked]="user.completed" id="indeterminate-checkbox" type="checkbox" />
+    <span style="margin:20px">{{ user.title}}</span>    
+    <span style="margin:20px">{{ user.id}}</span>  
+</label>
+<a (click)="change(true)" class="btn-floating waves-effect Small red right"><i class="material-icons">details</i></a>
+<a (click)="del(user.id)" class="btn-floating waves-effect Small red right"><i class="material-icons">delete</i></a>

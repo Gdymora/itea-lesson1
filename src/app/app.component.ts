@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { HeaderComponent } from './header/header.component';
 import { TodosListComponent } from './component/todos-list/todos-list.component';
+import { TodosItemComponent } from './component/todos-item/todos-item.component';
 
 @Component({
   selector: 'app-root',

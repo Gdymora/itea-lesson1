@@ -8,13 +8,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TodosListComponent } from './component/todos-list/todos-list.component';
+import { TodosItemComponent } from './component/todos-item/todos-item.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TodosListComponent
+    TodosListComponent,
+    TodosItemComponent
   ],
   imports: [
     BrowserModule,

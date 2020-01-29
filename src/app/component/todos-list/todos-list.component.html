@@ -5,26 +5,31 @@
 
         <div class="input-field col s6">
             <input value="Необходимо ввести данные" id="first_name2" type="text" class="validate">
-             
             <a class="waves-effect waves-light btn">Отправить</a>
-      </div> 
-   </div>
+        </div>  
+      
+       </div>
+
+       <div class="col s12">
+        <p>Количество кликов: {{clicks}}</p>
+    
+        <h5>Был удален элемент № : {{id}}</h5>
+        <p>В удаленном элементе находилось : {{userstring}}</p>
+       </div> 
+  </div> 
+
     <div class="row">
         <div class="col s12">
         <ul class="collection">
             <li class="collection-item"
-                  *ngFor="let item of users | slice:0:10"
-                 
+                  *ngFor="let item of users | slice:0:10"                 
                   [ngClass]="{'segoePrintFont':item.completed}"
-            >
-             
-      <label>
-        <input [checked]="item.completed" id="indeterminate-checkbox" type="checkbox" />
-        <span>{{ item.title}}</span>
-      </label>
-    </li>
-              <ul>
+            >          
+          <app-todos-item (onRemove)="onRemove(item)" (onChanged)="onChanged($event)" [user]="item"
+          > </app-todos-item>
+           </li> 
+        </ul>
 
-         <div>
-    <div>
-<div>
+               
+        </div>
+    </div>
